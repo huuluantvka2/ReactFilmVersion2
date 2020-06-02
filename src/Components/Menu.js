@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom';
 export default class Menu extends Component {
     render() {
         return (
@@ -11,12 +11,12 @@ export default class Menu extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="supportResponsive">
                         <ul className="navbar-nav from-word">
-                            <li className="nav-item"><a href="/#" className="nav-link">Trang chủ</a></li>
+                            <li className="nav-item"><Link to="/" className="nav-link">Trang chủ</Link></li>
                             <li className="nav-item dropdown"><a className="nav-link" href="/#" data-toggle="dropdown">Thể loại</a>
                                 <div className="dropdown-content">
-                                    <a href="/#" className="dropdown-item text-center">Phim hành động</a>
-                                    <a href="/#" className="dropdown-item text-center">Phim hành động</a>
-                                    <a href="/#" className="dropdown-item text-center">Phim hành động</a>
+                                    <Link to="/category-films" className="dropdown-item text-center">Phim hành động</Link>
+                                    <Link to="/category-films" className="dropdown-item text-center">Phim hành động</Link>
+                                    <Link to="/category-films" className="dropdown-item text-center">Phim hành động</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown"><a className="nav-link" href="/#" data-toggle="dropdown">Quốc gia</a>
